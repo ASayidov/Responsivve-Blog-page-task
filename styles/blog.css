@@ -344,3 +344,76 @@ section h3 {
     height: 150px;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .footer_wrapper {
+    padding-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer_wrapper {
+    padding-left: 5rem;
+  }
+  footer .btn {
+    right: 5rem;
+    top: 165px;
+  }
+  .text_item p {
+    margin-right: 20rem;
+  }
+  .left_down_item {
+    grid-template-columns: 40% 25% 35%;
+    column-gap: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  footer .btn {
+    display: none;
+  }
+  .text_item h2 {
+    margin-top: 2rem;
+  }
+  .text_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .text_item p {
+    margin-right: 0;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .left_down_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+  }
+
+  .logo_column_list {
+    margin-right: 1rem;
+  }
+
+  .about_contact {
+    display: flex;
+  }
+  .footer_wrapper {
+    padding: 0;
+  }
+  .about_list li:first-child {
+    margin-top: 0;
+  }
+  .left_down_item h2,
+  .about_contact p img,
+  .about_us {
+    display: none;
+  }
+  .line {
+    margin-right: 0;
+  }
+}
